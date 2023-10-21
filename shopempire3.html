@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Game - Shop Empire 3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: rgb(122, 122, 122);
+            margin: 0;
+            padding: 0;
+        }
+
+        #flash-container {
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+
+        #flash-object {
+            width: 100%;
+            max-width: 1000px;
+            height: 800px;
+            border: 1px solid #3f3535;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Shop Empire 3!</h1>
+    <div id="flash-container">
+        <object id="flash-object" data="https://srcrowbar.github.io/flashgames-/shop_empire_3.swf" type="application/x-shockwave-flash" width="1000" height="800">
+            <param name="movie" value="https://srcrowbar.github.io/flashgames-/shop_empire_3.swf">
+            <embed src="https://srcrowbar.github.io/flashgames-/shop_empire_3.swf" type="application/x-shockwave-flash" width="1000" height="800">
+        </object>
+    </div>
+    <p>Play the game and have fun!</p>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+</body>
+</html>
