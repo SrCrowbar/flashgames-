@@ -13,6 +13,33 @@
             padding: 0;
         }
 
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 15px 0;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
         #flash-container {
             margin: 20px auto;
             max-width: 1000px;
@@ -25,17 +52,47 @@
             border: 1px solid #3f3535;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
-    <h1>Welcome to Shop Empire 3!</h1>
+    <header>
+        <h1>Welcome to Shop Empire 3!</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New Games</a></li>
+                <li><a href="#">Trending Games</a></li>
+                <li><a href="#">Random Game</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div id="flash-container">
         <object id="flash-object" data="https://srcrowbar.github.io/flashgames-/shop_empire_3.swf" type="application/x-shockwave-flash" width="1000" height="800">
             <param name="movie" value="https://srcrowbar.github.io/flashgames-/shop_empire_3.swf">
             <embed src="https://srcrowbar.github.io/flashgames-/shop_empire_3.swf" type="application/x-shockwave-flash" width="1000" height="800">
         </object>
     </div>
+
     <p>Play the game and have fun!</p>
-    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+
+    <footer>
+        <p>&copy; 2023 Flash Games</p>
+    </footer>
 </body>
 </html>
+
